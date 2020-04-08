@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .App-logo {
@@ -26,6 +29,38 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.ReportItem > div:first-child {
+  width: 54px;
+  height: 54px;
+  background-color: #f7b924;
+  border-radius: 50%;
+}
+
+.ReportItem {
+  display: flex;
+  align-items: center;
+  margin-right: 10rem;
+}
+
+.content-report > h4 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.content-report > h1 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.content-report > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
 }
 
 @keyframes App-logo-spin {

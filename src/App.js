@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import ReportItem from './components/ReportItem';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.ReportItem = [
+      ['Company', 'Contact', 'Country'],
+      ['Alfreds Futterkiste', 'Maria Anders', 'Germany'],
+      ['Centro comercial Moctezuma', 'Francisco Chang', 'Mexico'],
+      ['Ernst Handel', 'Roland Mendel', 'Austria'],
+    ];
+  }
+  render() {
+    return (
+      <div className='App'>
+        <ReportItem cash='1.7M'>54.1% less earnings</ReportItem>
+        <ReportItem cash='1.7M'>54.1% less earnings</ReportItem>
+        <ReportItem cash='1.7M'>54.1% less earnings</ReportItem>
+      </div>
+    );
+  }
 }
 
 export default App;
